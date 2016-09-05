@@ -1,4 +1,4 @@
-# B9lab Week3 Small Project
+# B9lab Week8 Small Project
 
 This project was built using truffle. The frontend is based on the default MetaCoin frontend created when running "truffle init".
 
