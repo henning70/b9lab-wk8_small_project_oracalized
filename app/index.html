@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Henning's Small Project App</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href="./app.css" rel='stylesheet' type='text/css'>
+  <script src="./jquery.min.js"></script>
+  <script src="./app.js"></script>
+</head>
+<body onload="setValues()">
+  <h1>Henning's&nbsp;</h1>
+  <h2>Small Project DAPP</h2>
+  <h3>Contract balance <span class="black"><span id="contract_balance"></span></span></h3>
+  <h3>Account A balance <span class="black"><span id="acc_a_balance"></span></span></h3>
+  <h3>Account B balance <span class="black"><span id="acc_b_balance"></span></span></h3>
+
+  <br>
+  <h1>Transact</h1>
+  <br><br><label for="send_amount">Amount</label><input type="text" id="send_amount" placeholder="e.g., 100"></input>
+  <br><br><label for="sender">From Account</label><input type="text" id="sender" placeholder="e.g., 0xglr618e0f9e581aaf2146a886f7d0c8ea87d00c9"></input>
+  <br><br><label for="to_acc_a">To Account A</label><input type="text" id="to_acc_a" placeholder="e.g., 0xf83618e0f9e581aaf2146a886f7d0c8ea87d00c9"></input>
+  <br><br><label for="to_acc_b">To Account B</label><input type="text" id="to_acc_b" placeholder="e.g., 0xf83618e0f9e581aaf2146a886f7d0c8ea87d00c9"></input>
+  <br><br><label "buttons_area"></label>
+  <button id="submit" onclick="setBalances()">Get balances</button>
+  <button id="submit" onclick="sendAmountToContract()">Send funds to contract</button>
+  <button id="submit" onclick="getETHUSD()">ETH to USD</button>
+  <br><br>
+  <span id="status"></span>
+</body>
+</html>
